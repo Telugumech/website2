@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image uploader</title>
+</head>
+<body>
+    <form enctype="multipart/form-data" action="/upload" method="POST">
+        <input type="file" name="image" />
+        <input type="submit" value="Upload" />
+      </form>
+      
+
+    <script>
+        const form = document.querySelector('form');
+form.addEventListener('submit', async (e) => {
+  e.preventDefault();
+  const formData = new FormData(form);
+  const response = await fetch('/upload', {
+    method: 'POST',
+    body: formData
+  });
+  const data = await response.json();
+  console.log(data);
+});
+
+const express = require('express');
+const multer = require('multer');
+const bodyParser = require('body-parser');
+
+const app = express();
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
+
+const storage = multer.diskStorage({
+  destination: function (req, file, cb) {
+    cb(null, 'uploads/');
+  },
+  filename: function (req, file, cb) {
+    cb(null, file.originalname);
+  }
+});
+
+const upload = multer({ storage: storage });
+
+app.post('/upload', upload.single('image'), (req, res) => {
+  console.log(req.file);
+  res.json({ message: 'Image uploaded successfully' });
+});
+
+app.listen(8080, () => {
+  console.log('Server is running on port 8080');
+});
+
+    </script>
+</body>
+</html>

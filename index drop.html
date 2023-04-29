@@ -1,0 +1,426 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Bootstrap website-9</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <![endif]-->
+
+      <style type="text/css">
+        
+      body {
+  margin: 10px;
+  font-family: "Lato", sans-serif;
+}
+
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+  position: relative;
+  height: auto;
+  overflow: auto;
+}
+
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+ 
+.sidebar a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+
+
+
+</style>
+  </head>
+  <body>
+
+    <div class="jumbotron text-center">
+      <br><br>
+      <img src="venkatr.jpg" class="img-thumbnail" style="width:100px;height: 100px; float: left; border-radius: 50%;">
+      <h1>Engineering and Paramedical Vocational Courses</h1>
+      <h2>Learn more Be smarter</h2>
+    </div>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+       <a class="navbar-brand" href="#"><img class="reponsive" src="venkatr.jpg" width="30" height="30" style="border-radius: 50%;" alt="venkat"><figcaption>venkat</figcaption></a> 
+      <div class="navbar-brand navbar-left">
+         <form class="form-inline pull-right">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+      <a href="#">Home<span class="glyphicon glyphicon-home"></span></a>&ensp;
+      <a href="#">User<span class="glyphicon glyphicon-user"></span></a>&ensp;
+      <a href="#"><span class="glyphicon glyphicon-list"></span></a>&ensp;
+      </div>
+
+     
+
+<div class="btn-group btn-sm" role="group" aria-label="...">
+<button class="btn btn-white dropdown-toggle btn-success" type="button" data-toggle="dropdown" id="dropdownMenu1" aria-haspopup="true" aria-expanded="true">m&at First Year<span class="caret"></span></button>
+<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                   <li class="divider"></li>
+                   <li class="dropdown-header bg-success text-center">WORKSHOP TECHNOLOGY-1</li>
+                   <li class="divider bg-sucess"></li>
+                   <li><a href="wt1unit-1.pdf" target="_blank">1.Engineering Materials</a></li>
+                   <li><a href="wt1unit-2.pdf" target="_blank">2.Carpentry</a></li>
+                   <li><a href="wt1unit-3.pdf" target="_blank">3.sheet Metal Work</a></li>
+                   <li><a href="wt1unit-4.pdf" target="_blank">4.Fitting,Drilling and grinding</a></li>
+                   <li><a href="wt1unit-5.pdf" target="_blank">5.Metal surfaces &Heat treatment</a></li>
+                   <li><a href="wt1unit-6.pdf" target="_blank">6.Foundry</a></li>
+                   <li><a href="wt1unit-7.pdf" target="_blank">7.Forging and Welding</a></li>
+                   <li><a href="#">Practicals<span class="caret"></span></a></li>
+
+                   <li class="divider"></li>
+                   <li class="dropdown-header bg-success text-center">Basic Mechanical Engineering</li>
+                   <li class="divider"></li>
+
+                   <li><a href="mtunit-1.pdf" target="_blank">1.Thermodynamics and Fuels</a></li>
+                   <li><a href="mtunit-2.pdf" target="_blank">2.power transmission</a></li>
+                   <li><a href="mtunit-3.pdf" target="_blank">3.Basic Electricity</a></li>
+                   <li><a href="mtunit-4.pdf" target="_blank">4.Magnetisam and electromagnetisam</a></li>
+                   <li><a href="mtunit-5.pdf" target="_blank">5.Electrical machines</a></li>
+                   <li><a href="mtunit-6.pdf" target="_blank">6.Batteries</a></li>
+                   <li><a href="mtunit-7.pdf" target="_blank">7.Auto Electrical Systems</a></li>
+                   <li><a href="#" target="_blank">Practicals</a></li>
+
+                   <li class="divider"></li>
+                   <li class="dropdown-header bg-success text-center text-center">Automobile Power Plant</li>
+                   <li class="divider"></li>
+
+                   <li><a href="apunit-1.pdf" target="_blank">1.Engine Construction</a></li>
+                   <li><a href="apunit-2.pdf" target="_blank">2.I.C.Engines</a></li>
+                   <li><a href="apunit-3.pdf" target="_blank">3.Fuel Supply System</a></li>
+                   <li><a href="apunit-4.pdf" target="_blank">4.Lubrication Systems</a></li>
+                   <li><a href="apunit-5.pdf" target="_blank">5.Cooling Systems</a></li>
+                   <li><a href="apunit-6.pdf" target="_blank">6.Air Conditioning System</a></li>
+                   <li><a href="apunit-7.pdf" target="_blank">7.Performance of IC Engines</a></li>
+                   <li><a href="#" target="_blank">Practicals</a></li>
+</ul>
+
+</div>
+
+
+
+<div class="btn-group btn-sm" role="group" aria-label="...">
+<button class="btn btn-white dropdown-toggle btn-success" type="button" data-toggle="dropdown" id="dropdownMenu1" aria-haspopup="true" aria-expanded="true">m&at Second Year<span class="caret"></span></button>
+<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                   <li class="divider"></li>
+                   <li class="dropdown-header bg-success text-center">WORKSHOP TECHNOLOGY-1</li>
+                   <li class="divider bg-sucess"></li>
+                   <li><a href="wt1unit-1.pdf" target="_blank">1.Engineering Materials</a></li>
+                   <li><a href="wt1unit-2.pdf" target="_blank">2.Carpentry</a></li>
+                   <li><a href="wt1unit-3.pdf" target="_blank">3.sheet Metal Work</a></li>
+                   <li><a href="wt1unit-4.pdf" target="_blank">4.Fitting,Drilling and grinding</a></li>
+                   <li><a href="wt1unit-5.pdf" target="_blank">5.Metal surfaces &Heat treatment</a></li>
+                   <li><a href="wt1unit-6.pdf" target="_blank">6.Foundry</a></li>
+                   <li><a href="wt1unit-7.pdf" target="_blank">7.Forging and Welding</a></li>
+                   <li><a href="#">Practicals<span class="caret"></span></a></li>
+
+                   <li class="divider"></li>
+                   <li class="dropdown-header bg-success text-center">Basic Mechanical Engineering</li>
+                   <li class="divider"></li>
+
+                   <li><a href="mtunit-1.pdf" target="_blank">1.Thermodynamics and Fuels</a></li>
+                   <li><a href="mtunit-2.pdf" target="_blank">2.power transmission</a></li>
+                   <li><a href="mtunit-3.pdf" target="_blank">3.Basic Electricity</a></li>
+                   <li><a href="mtunit-4.pdf" target="_blank">4.Magnetisam and electromagnetisam</a></li>
+                   <li><a href="mtunit-5.pdf" target="_blank">5.Electrical machines</a></li>
+                   <li><a href="mtunit-6.pdf" target="_blank">6.Batteries</a></li>
+                   <li><a href="mtunit-7.pdf" target="_blank">7.Auto Electrical Systems</a></li>
+                   <li><a href="#" target="_blank">Practicals</a></li>
+
+                   <li class="divider"></li>
+                   <li class="dropdown-header bg-success text-center text-center">Automobile Power Plant</li>
+                   <li class="divider"></li>
+
+                   <li><a href="apunit-1.pdf" target="_blank">1.Engine Construction</a></li>
+                   <li><a href="apunit-2.pdf" target="_blank">2.I.C.Engines</a></li>
+                   <li><a href="apunit-3.pdf" target="_blank">3.Fuel Supply System</a></li>
+                   <li><a href="apunit-4.pdf" target="_blank">4.Lubrication Systems</a></li>
+                   <li><a href="apunit-5.pdf" target="_blank">5.Cooling Systems</a></li>
+                   <li><a href="apunit-6.pdf" target="_blank">6.Air Conditioning System</a></li>
+                   <li><a href="apunit-7.pdf" target="_blank">7.Performance of IC Engines</a></li>
+                   <li><a href="#" target="_blank">Practicals</a></li>
+</ul>
+
+</div>
+
+
+<div class="btn-group btn-sm" role="group" aria-label="...">
+<button class="btn btn-white dropdown-toggle btn-success" type="button" data-toggle="dropdown" id="dropdownMenu1" aria-haspopup="true" aria-expanded="true">cet First Year<span class="caret"></span></button>
+<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                   <li class="divider"></li>
+                   <li class="dropdown-header bg-success text-center">WORKSHOP TECHNOLOGY-1</li>
+                   <li class="divider bg-sucess"></li>
+                   <li><a href="wt1unit-1.pdf" target="_blank">1.Engineering Materials</a></li>
+                   <li><a href="wt1unit-2.pdf" target="_blank">2.Carpentry</a></li>
+                   <li><a href="wt1unit-3.pdf" target="_blank">3.sheet Metal Work</a></li>
+                   <li><a href="wt1unit-4.pdf" target="_blank">4.Fitting,Drilling and grinding</a></li>
+                   <li><a href="wt1unit-5.pdf" target="_blank">5.Metal surfaces &Heat treatment</a></li>
+                   <li><a href="wt1unit-6.pdf" target="_blank">6.Foundry</a></li>
+                   <li><a href="wt1unit-7.pdf" target="_blank">7.Forging and Welding</a></li>
+                   <li><a href="#">Practicals<span class="caret"></span></a></li>
+
+                   <li class="divider"></li>
+                   <li class="dropdown-header bg-success text-center">Basic Mechanical Engineering</li>
+                   <li class="divider"></li>
+
+                   <li><a href="mtunit-1.pdf" target="_blank">1.Thermodynamics and Fuels</a></li>
+                   <li><a href="mtunit-2.pdf" target="_blank">2.power transmission</a></li>
+                   <li><a href="mtunit-3.pdf" target="_blank">3.Basic Electricity</a></li>
+                   <li><a href="mtunit-4.pdf" target="_blank">4.Magnetisam and electromagnetisam</a></li>
+                   <li><a href="mtunit-5.pdf" target="_blank">5.Electrical machines</a></li>
+                   <li><a href="mtunit-6.pdf" target="_blank">6.Batteries</a></li>
+                   <li><a href="mtunit-7.pdf" target="_blank">7.Auto Electrical Systems</a></li>
+                   <li><a href="#" target="_blank">Practicals</a></li>
+
+                   <li class="divider"></li>
+                   <li class="dropdown-header bg-success text-center text-center">Automobile Power Plant</li>
+                   <li class="divider"></li>
+
+                   <li><a href="apunit-1.pdf" target="_blank">1.Engine Construction</a></li>
+                   <li><a href="apunit-2.pdf" target="_blank">2.I.C.Engines</a></li>
+                   <li><a href="apunit-3.pdf" target="_blank">3.Fuel Supply System</a></li>
+                   <li><a href="apunit-4.pdf" target="_blank">4.Lubrication Systems</a></li>
+                   <li><a href="apunit-5.pdf" target="_blank">5.Cooling Systems</a></li>
+                   <li><a href="apunit-6.pdf" target="_blank">6.Air Conditioning System</a></li>
+                   <li><a href="apunit-7.pdf" target="_blank">7.Performance of IC Engines</a></li>
+                   <li><a href="#" target="_blank">Practicals</a></li>
+</ul>
+
+</div>
+
+<div class="btn-group btn-sm" role="group" aria-label="...">
+<button class="btn btn-white dropdown-toggle btn-success" type="button" data-toggle="dropdown" id="dropdownMenu1" aria-haspopup="true" aria-expanded="true">cet Second Year<span class="caret"></span></button>
+<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                   <li class="divider"></li>
+                   <li class="dropdown-header bg-success text-center">WORKSHOP TECHNOLOGY-1</li>
+                   <li class="divider bg-sucess"></li>
+                   <li><a href="wt1unit-1.pdf" target="_blank">1.Engineering Materials</a></li>
+                   <li><a href="wt1unit-2.pdf" target="_blank">2.Carpentry</a></li>
+                   <li><a href="wt1unit-3.pdf" target="_blank">3.sheet Metal Work</a></li>
+                   <li><a href="wt1unit-4.pdf" target="_blank">4.Fitting,Drilling and grinding</a></li>
+                   <li><a href="wt1unit-5.pdf" target="_blank">5.Metal surfaces &Heat treatment</a></li>
+                   <li><a href="wt1unit-6.pdf" target="_blank">6.Foundry</a></li>
+                   <li><a href="wt1unit-7.pdf" target="_blank">7.Forging and Welding</a></li>
+                   <li><a href="#">Practicals<span class="caret"></span></a></li>
+
+                   <li class="divider"></li>
+                   <li class="dropdown-header bg-success text-center">Basic Mechanical Engineering</li>
+                   <li class="divider"></li>
+
+                   <li><a href="mtunit-1.pdf" target="_blank">1.Thermodynamics and Fuels</a></li>
+                   <li><a href="mtunit-2.pdf" target="_blank">2.power transmission</a></li>
+                   <li><a href="mtunit-3.pdf" target="_blank">3.Basic Electricity</a></li>
+                   <li><a href="mtunit-4.pdf" target="_blank">4.Magnetisam and electromagnetisam</a></li>
+                   <li><a href="mtunit-5.pdf" target="_blank">5.Electrical machines</a></li>
+                   <li><a href="mtunit-6.pdf" target="_blank">6.Batteries</a></li>
+                   <li><a href="mtunit-7.pdf" target="_blank">7.Auto Electrical Systems</a></li>
+                   <li><a href="#" target="_blank">Practicals</a></li>
+
+                   <li class="divider"></li>
+                   <li class="dropdown-header bg-success text-center text-center">Automobile Power Plant</li>
+                   <li class="divider"></li>
+
+                   <li><a href="apunit-1.pdf" target="_blank">1.Engine Construction</a></li>
+                   <li><a href="apunit-2.pdf" target="_blank">2.I.C.Engines</a></li>
+                   <li><a href="apunit-3.pdf" target="_blank">3.Fuel Supply System</a></li>
+                   <li><a href="apunit-4.pdf" target="_blank">4.Lubrication Systems</a></li>
+                   <li><a href="apunit-5.pdf" target="_blank">5.Cooling Systems</a></li>
+                   <li><a href="apunit-6.pdf" target="_blank">6.Air Conditioning System</a></li>
+                   <li><a href="apunit-7.pdf" target="_blank">7.Performance of IC Engines</a></li>
+                   <li><a href="#" target="_blank">Practicals</a></li>
+</ul>
+
+</div>
+
+<div class="btn-group btn-sm" role="group" aria-label="...">
+<button class="btn btn-white dropdown-toggle btn-success" type="button" data-toggle="dropdown" id="dropdownMenu1" aria-haspopup="true" aria-expanded="true">mlt First Year<span class="caret"></span></button>
+<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                   <li class="divider"></li>
+                   <li class="dropdown-header bg-success text-center">WORKSHOP TECHNOLOGY-1</li>
+                   <li class="divider bg-sucess"></li>
+                   <li><a href="wt1unit-1.pdf" target="_blank">1.Engineering Materials</a></li>
+                   <li><a href="wt1unit-2.pdf" target="_blank">2.Carpentry</a></li>
+                   <li><a href="wt1unit-3.pdf" target="_blank">3.sheet Metal Work</a></li>
+                   <li><a href="wt1unit-4.pdf" target="_blank">4.Fitting,Drilling and grinding</a></li>
+                   <li><a href="wt1unit-5.pdf" target="_blank">5.Metal surfaces &Heat treatment</a></li>
+                   <li><a href="wt1unit-6.pdf" target="_blank">6.Foundry</a></li>
+                   <li><a href="wt1unit-7.pdf" target="_blank">7.Forging and Welding</a></li>
+                   <li><a href="#">Practicals<span class="caret"></span></a></li>
+
+                   <li class="divider"></li>
+                   <li class="dropdown-header bg-success text-center">Basic Mechanical Engineering</li>
+                   <li class="divider"></li>
+
+                   <li><a href="mtunit-1.pdf" target="_blank">1.Thermodynamics and Fuels</a></li>
+                   <li><a href="mtunit-2.pdf" target="_blank">2.power transmission</a></li>
+                   <li><a href="mtunit-3.pdf" target="_blank">3.Basic Electricity</a></li>
+                   <li><a href="mtunit-4.pdf" target="_blank">4.Magnetisam and electromagnetisam</a></li>
+                   <li><a href="mtunit-5.pdf" target="_blank">5.Electrical machines</a></li>
+                   <li><a href="mtunit-6.pdf" target="_blank">6.Batteries</a></li>
+                   <li><a href="mtunit-7.pdf" target="_blank">7.Auto Electrical Systems</a></li>
+                   <li><a href="#" target="_blank">Practicals</a></li>
+
+                   <li class="divider"></li>
+                   <li class="dropdown-header bg-success text-center text-center">Automobile Power Plant</li>
+                   <li class="divider"></li>
+
+                   <li><a href="apunit-1.pdf" target="_blank">1.Engine Construction</a></li>
+                   <li><a href="apunit-2.pdf" target="_blank">2.I.C.Engines</a></li>
+                   <li><a href="apunit-3.pdf" target="_blank">3.Fuel Supply System</a></li>
+                   <li><a href="apunit-4.pdf" target="_blank">4.Lubrication Systems</a></li>
+                   <li><a href="apunit-5.pdf" target="_blank">5.Cooling Systems</a></li>
+                   <li><a href="apunit-6.pdf" target="_blank">6.Air Conditioning System</a></li>
+                   <li><a href="apunit-7.pdf" target="_blank">7.Performance of IC Engines</a></li>
+                   <li><a href="#" target="_blank">Practicals</a></li>
+</ul>
+
+</div>
+
+
+
+<div class="btn-group btn-sm" role="group" aria-label="...">
+<button class="btn btn-white dropdown-toggle btn-success" type="button" data-toggle="dropdown" id="dropdownMenu1" aria-haspopup="true" aria-expanded="true">mlt Second Year<span class="caret"></span></button>
+<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                   <li class="divider"></li>
+                   <li class="dropdown-header bg-success text-center">WORKSHOP TECHNOLOGY-1</li>
+                   <li class="divider bg-sucess"></li>
+                   <li><a href="wt1unit-1.pdf" target="_blank">1.Engineering Materials</a></li>
+                   <li><a href="wt1unit-2.pdf" target="_blank">2.Carpentry</a></li>
+                   <li><a href="wt1unit-3.pdf" target="_blank">3.sheet Metal Work</a></li>
+                   <li><a href="wt1unit-4.pdf" target="_blank">4.Fitting,Drilling and grinding</a></li>
+                   <li><a href="wt1unit-5.pdf" target="_blank">5.Metal surfaces &Heat treatment</a></li>
+                   <li><a href="wt1unit-6.pdf" target="_blank">6.Foundry</a></li>
+                   <li><a href="wt1unit-7.pdf" target="_blank">7.Forging and Welding</a></li>
+                   <li><a href="#">Practicals<span class="caret"></span></a></li>
+
+                   <li class="divider"></li>
+                   <li class="dropdown-header bg-success text-center">Basic Mechanical Engineering</li>
+                   <li class="divider"></li>
+
+                   <li><a href="mtunit-1.pdf" target="_blank">1.Thermodynamics and Fuels</a></li>
+                   <li><a href="mtunit-2.pdf" target="_blank">2.power transmission</a></li>
+                   <li><a href="mtunit-3.pdf" target="_blank">3.Basic Electricity</a></li>
+                   <li><a href="mtunit-4.pdf" target="_blank">4.Magnetisam and electromagnetisam</a></li>
+                   <li><a href="mtunit-5.pdf" target="_blank">5.Electrical machines</a></li>
+                   <li><a href="mtunit-6.pdf" target="_blank">6.Batteries</a></li>
+                   <li><a href="mtunit-7.pdf" target="_blank">7.Auto Electrical Systems</a></li>
+                   <li><a href="#" target="_blank">Practicals</a></li>
+
+                   <li class="divider"></li>
+                   <li class="dropdown-header bg-success text-center text-center">Automobile Power Plant</li>
+                   <li class="divider"></li>
+
+                   <li><a href="apunit-1.pdf" target="_blank">1.Engine Construction</a></li>
+                   <li><a href="apunit-2.pdf" target="_blank">2.I.C.Engines</a></li>
+                   <li><a href="apunit-3.pdf" target="_blank">3.Fuel Supply System</a></li>
+                   <li><a href="apunit-4.pdf" target="_blank">4.Lubrication Systems</a></li>
+                   <li><a href="apunit-5.pdf" target="_blank">5.Cooling Systems</a></li>
+                   <li><a href="apunit-6.pdf" target="_blank">6.Air Conditioning System</a></li>
+                   <li><a href="apunit-7.pdf" target="_blank">7.Performance of IC Engines</a></li>
+                   <li><a href="#" target="_blank">Practicals</a></li>
+</ul>
+</div>
+
+
+
+
+
+
+
+
+
+</div>
+</nav>
+
+<div class="sidebar">
+  <a class="active text-center">Heading1</a>
+  <a href="#home">Home</a>
+  <a href="#news">News</a>
+  <a href="#contact">Contact</a>
+  <a href="#about">About</a>
+  <a href="#services">Home</a>
+  <a href="#news">News</a>
+  <a class="active text-center">Heading2</a>
+  <a href="#about">About</a>
+   <a href="#services">Home</a>
+  <a href="#news">News</a>
+  <a href="#contact">Contact</a>
+  <a href="#about">About</a>
+  <a href="#news">News</a>
+  <a class="active text-center">Heading3</a>
+  <a href="#about">About</a>
+   <a href="#services">Home</a>
+  <a href="#news">News</a>
+  <a href="#contact">Contact</a>
+  <a href="#about">About</a>
+  <a href="#news">News</a>
+</div>
+
+<div class="content text-center">
+  <h1>some content</h1>
+</div>
+
+<div class="footer bg-primary text-center"><h1>Email:mech47@gmail.com</h1></div>
+
+      
+
+
+
+
+
+     
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+  </body>
+</html>
